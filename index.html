@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Современная веб-разработка, превращаем ваши идеи в сайты.">
+    <meta name="keywords" content="DK, IT, сайт, frontend, backend, создать, сделать.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOODFUSION</title>
+    <link rel="icon" type="image/x-icon" href="/CSS/image/food.ico">
+    <link rel="stylesheet" href="/CSS/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+<div class="wrapper">
+  <header role="banner">
+  <nav class="navbar navbar-expand-lg navbar-default">
+    <div class="container position-relative">
+      <!-- Логотип -->
+      <a href="#" class="navbar-brand">
+        <img class="header_logo" src="CSS/image/food.ico" alt="Food Logo" />
+      </a>
+
+      <!-- Тогглер для мобильных -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Меню и кнопка -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <!-- Меню по центру -->
+        <ul class="navbar-nav mb-2 mb-lg-0 js-nav">
+          <li class="nav-item"><a class="nav-link" href="#home"><span>Главная</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#about"><span>Рецепты</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#services"><span>Категории</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#folio"><span>О Нас</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><span>Связь с нами</span></a></li>
+        </ul>
+
+        <!-- Кнопка справа -->
+        <a href="#signup" class="slide position-absolute end-0 top-50 translate-middle-y d-none d-lg-flex">
+          <span>Войти</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+  <section id="home" class="sec-main">
+    <div class="hero-content">
+    <h1 class="main-heading">
+      Искусство<br/>
+      <em class="italic-word">Простого</em><br/>
+      Приготовления
+    </h1>
+
+    <span class="main-text">
+      Откройте для себя рецепты, в которых особое внимание уделяется ингредиентам, технике и удовольствию от приготовления пищи в домашних условиях.
+    </span>
+      <a href="#recipes" class="cta-link">Изучить рецепты <img class="cta-link-img" src="/CSS/image/down.svg"></a>
+  </div>
+  </section>
+
+  <section id="about" class="sec-about">
+  <div class="container">
+    <!-- ЗАГОЛОВОЧНЫЙ БЛОК -->
+<div class="mb-5">
+
+  <span class="section-eyebrow d-block mb-2">
+    ИЗБРАННЫЕ ПРОИЗВЕДЕНИЯ
+  </span>
+
+  <div class="d-flex justify-content-between align-items-end">
+    <h2 class="section-title m-0">
+      Избранные рецепты
+    </h2>
+
+    <a href="#" class="section-link">
+      Посмотреть все
+    </a>
+  </div>
+
+</div>
+
+<!-- КАРТОЧКИ -->
+<div class="row g-4">
+
+  <div class="col-lg-3 col-md-6">
+    <div class="recipe-card">
+      <img src="CSS/image/recipe-pasta.jpg" alt="">
+      <div class="recipe-meta">
+        <span>ПАСТА</span>
+        <span>30 минут</span>
+      </div>
+      <h3 class="recipe-title">
+        Классическая Паста с Помидорами и Базиликом
+      </h3>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6">
+    <div class="recipe-card">
+      <img src="CSS/image/recipe-chicken.jpg" alt="">
+      <div class="recipe-meta">
+        <span>ОСНОВНОЕ БЛЮДО</span>
+        <span>1 час 30 минут</span>
+      </div>
+      <h3 class="recipe-title">
+        Курица, Запеченная на травах
+      </h3>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6">
+    <div class="recipe-card">
+      <img src="CSS/image/recipe-salad.jpg" alt="">
+      <div class="recipe-meta">
+        <span>САЛАТЫ</span>
+        <span>15 минут</span>
+      </div>
+      <h3 class="recipe-title">
+        Средиземноморский салат
+      </h3>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6">
+    <div class="recipe-card">
+      <img src="CSS/image/recipe-dessert.jpg" alt="">
+      <div class="recipe-meta">
+        <span>ДЕСЕРТЫ</span>
+        <span>45 минут</span>
+      </div>
+      <h3 class="recipe-title">
+        Шоколадный десерт
+      </h3>
+
+
+
+
+  </div>
+</section>
+
+<!-- КАТАЛОГ -->
+  <section class="categories-section">
+  <div class="container">
+
+    <span class="section-eyebrow-catalog">ОБЗОР</span>
+    <h2 class="section-title-catalog">Категории</h2>
+
+    <div class="categories-list-catalog">
+
+      <a href="#" class="category-item-catalog">
+        <div class="category-left-catalog">
+          <span class="category-name-catalog">Основные блюда</span>
+          <span class="category-count-catalog">45 рецептов</span>
+        </div>
+        <span class="category-arrow-catalog">↗</span>
+      </a>
+
+      <a href="#" class="category-item-catalog">
+        <div class="category-left-catalog">
+          <span class="category-name-catalog">Десерты</span>
+          <span class="category-count-catalog">32 рецепта</span>
+        </div>
+        <span class="category-arrow-catalog">↗</span>
+      </a>
+
+      <a href="#" class="category-item-catalog">
+        <div class="category-left-catalog">
+          <span class="category-name-catalog">Вегетарианские</span>
+          <span class="category-count-catalog">28 рецептов</span>
+        </div>
+        <span class="category-arrow">↗</span>
+      </a>
+
+      <a href="#" class="category-item-catalog">
+        <div class="category-left-catalog">
+          <span class="category-name-catalog">Завтрак</span>
+          <span class="category-count-catalog">24 рецепта</span>
+        </div>
+        <span class="category-arrow-catalog">↗</span>
+      </a>
+
+      <a href="#" class="category-item-catalog">
+        <div class="category-left-catalog">
+          <span class="category-name-catalog">Супы и рагу</span>
+          <span class="category-count-catalog">18 рецептов</span>
+        </div>
+        <span class="category-arrow-catalog">↗</span>
+      </a>
+
+      <a href="#" class="category-item-catalog">
+        <div class="category-left-catalog">
+          <span class="category-name-catalog">Морепродукты</span>
+          <span class="category-count-catalog">22 рецепта</span>
+        </div>
+        <span class="category-arrow-catalog">↗</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- РЕЙТИНГ -->
+  <section class="about-section">
+  <div class="container">
+
+    <div class="about-grid">
+
+      <!-- ЛЕВАЯ КОЛОНКА -->
+      <div class="about-left">
+        <span class="section-eyebrow-about">О СЕБЕ</span>
+
+        <h2 class="about-title">
+          Любовное письмо<br>
+          домашней кухне
+        </h2>
+      </div>
+
+      <!-- ПРАВАЯ КОЛОНКА -->
+      <div class="about-right">
+        <p>
+          FOODFUSION — кулинарный журнал, посвящённый искусству простой и красивой готовки.
+          Мы считаем, что для приготовления вкусной еды не нужны сложные рецепты —
+          только качественные ингредиенты, продуманная технология и любовь к своему делу.
+        </p>
+
+        <p>
+          Каждый рецепт протестирован на нашей домашней кухне и рассчитан на кулинара
+          любого уровня. Мы готовы вдохновить вас на приготовление любого блюда:
+          от быстрого ужина в будний день до изысканного блюда на выходных.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-value">200+</span>
+            <span class="stat-label">Рецепты</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat-value">10 тыс.</span>
+            <span class="stat-label">Читателей</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat-value">5★</span>
+            <span class="stat-label">Рейтинг</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- РАССЫЛКА -->
+
+<section class="newsletter">
+  <div class="newsletter__content">
+    <span class="newsletter__eyebrow">РАССЫЛКА</span>
+
+    <h2 class="newsletter__title">
+      Оставайтесь <br>
+      <em>вдохновлёнными</em>
+    </h2>
+
+    <p class="newsletter__text">
+      Новые рецепты, кулинарные советы и сезонные<br>
+      идеи — прямо в вашем почтовом ящике.
+    </p>
+
+    <form class="newsletter__form">
+      <input
+        type="email"
+        placeholder="Ваш адрес электронной почты"
+        required
+      >
+      <button type="submit">
+        Подписка <span>→</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+
+
+<!-- ФУТЕР -->
+
+  <footer id="footer" class="bg-light py-3 mt-5">
+    <div class="container">
+      <ul class="soc-media-ul">
+        <li>
+          <a class="facebook" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-solid fa-earth-europe"></i>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a class="google" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-google"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+<script src="JS/script.js"></script>
+<script src="JS/form.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        const form = document.getElementById('inputMessage');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+             try {
+                const response = await fetch('http://localhost:8000/greet=${encodeURIComponent(form)}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name: name })
+                });
+
+    </script>
+</body>
+</html>

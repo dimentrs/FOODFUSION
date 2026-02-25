@@ -1,0 +1,23 @@
+{
+  "name": "my-landing",
+  "version": "1.0.0",
+  "description": "Landing page project with Bootstrap and SCSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:css"
+  },
+  "keywords": [
+    "landing",
+    "bootstrap",
+    "scss",
+    "frontend"
+  ],
+  "author": "Твоё имя",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
