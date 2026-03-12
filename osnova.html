@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Современная веб-разработка, превращаем ваши идеи в сайты.">
+    <meta name="keywords" content="DK, IT, сайт, frontend, backend, создать, сделать.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOODFUSION</title>
+    <link rel="icon" type="image/x-icon" href="/CSS/image/food.ico">
+    <link rel="stylesheet" href="/CSS/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+<div class="wrapper">
+  <header role="banner">
+  <nav class="navbar navbar-expand-lg navbar-default">
+    <div class="container position-relative">
+      <!-- Логотип -->
+      <a href="index.html" class="navbar-brand">
+        <img class="header_logo" src="CSS/image/food.ico" alt="Food Logo" />
+      </a>
+
+      <!-- Тогглер для мобильных -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Меню и кнопка -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <!-- Меню по центру -->
+        <ul class="navbar-nav mb-2 mb-lg-0 js-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html"><span>Главная</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#about"><span>Рецепты</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#services"><span>Категории</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#folio"><span>О Нас</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><span>Связь с нами</span></a></li>
+        </ul>
+
+        <!-- Кнопка справа -->
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="main-dishes-hero">
+<div class="container text-center hero-content1">
+
+<h1 class="hero-title">
+Основные <br>
+<em>Блюда</em>
+</h1>
+
+<p class="hero-subtitle">
+Лучшие рецепты для вкусного домашнего ужина
+</p>
+
+</div>
+</section>
+
+
+<!-- SECTION RECIPES -->
+
+<section class="recipes-section">
+
+<div class="container">
+
+<div class="section-header text-center">
+
+<span class="section-eyebrow">
+Рецепты
+</span>
+
+<h2 class="section-title">
+Популярные блюда
+</h2>
+
+</div>
+
+
+   <div class="container my-4">
+  <form autocomplete="off" class="filter-panel row g-3 justify-content-center align-items-end">
+        <div class="finder__outer">
+    <!-- Время готовки -->
+    <div class="col-md-3">
+      <label for="cookTime" class="form-label">Время готовки</label>
+      <select class="filter-select" id="cookTime">
+        <option selected disabled></option>
+        <option value="15">до 15 минут</option>
+        <option value="30">30 минут</option>
+        <option value="60">1 час</option>
+        <option value="120">более часа</option>
+      </select>
+    </div>
+
+
+    <!-- Ингредиенты -->
+    <div class="col-md-3">
+      <label for="ingredients" class="form-label">Ингредиенты</label>
+      <select class="filter-select" id="ingredients">
+        <option selected disabled></option>
+        <option value="5">до 5</option>
+        <option value="5-8">5-8</option>
+        <option value="8+">8 и более</option>
+      </select>
+    </div>
+
+    <!-- Калорийность -->
+    <div class="col-md-3">
+      <label for="calories" class="form-label">Калорийность</label>
+      <select class="filter-select" id="calories">
+        <option selected disabled></option>
+        <option value="300">до 300 ккал</option>
+        <option value="600">до 600 ккал</option>
+        <option value="800">до 800 ккал</option>
+        <option value="1000">1000 ккал и более</option>
+      </select>
+    </div>
+
+    <!-- Поиск по названию -->
+    <div class="col-md-3">
+      <label for="searchDish" class="form-label">Поиск по названию</label>
+      <input type="text" class="filter-input" id="searchDish" placeholder="Введите название блюда">
+    </div>
+        </div>
+  </form>
+</div>
+
+
+
+
+
+
+    <div class="row g-4 mt-4">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="recipe-card1">
+
+<div class="recipe-card__image1">
+<img src="CSS/image/recipe-chicken.jpg" alt="Паста Болоньезе">
+</div>
+
+<div class="recipe-card__body1">
+
+<h3 class="recipe-card__title1">
+Паста Болоньезе
+</h3>
+
+<p class="recipe-card__description1">
+Классическая итальянская паста с насыщенным мясным соусом и ароматными травами.
+</p>
+
+<div class="recipe-card__meta1">
+
+<div class="meta-item1">
+<span class="meta-icon1">⏱</span>
+<span>40 мин</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🥕</span>
+<span>8 ингредиентов</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🍽</span>
+<span>4 порции</span>
+</div>
+
+</div>
+
+<a href="#" class="recipe-btn1">
+Смотреть рецепт
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+        <div class="col-lg-3 col-md-6">
+
+<div class="recipe-card1">
+
+<div class="recipe-card__image1">
+<img src="CSS/image/recipe-chicken.jpg" alt="Паста Болоньезе">
+</div>
+
+<div class="recipe-card__body1">
+
+<h3 class="recipe-card__title1">
+Паста Болоньезе
+</h3>
+
+<p class="recipe-card__description1">
+Классическая итальянская паста с насыщенным мясным соусом и ароматными травами.
+</p>
+
+<div class="recipe-card__meta1">
+
+<div class="meta-item1">
+<span class="meta-icon1">⏱</span>
+<span>40 мин</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🥕</span>
+<span>8 ингредиентов</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🍽</span>
+<span>4 порции</span>
+</div>
+
+</div>
+
+<a href="#" class="recipe-btn1">
+Смотреть рецепт
+</a>
+
+</div>
+
+</div>
+
+</div>
+        <div class="col-lg-3 col-md-6">
+
+<div class="recipe-card1">
+
+<div class="recipe-card__image1">
+<img src="CSS/image/recipe-chicken.jpg" alt="Паста Болоньезе">
+</div>
+
+<div class="recipe-card__body1">
+
+<h3 class="recipe-card__title1">
+Паста Болоньезе
+</h3>
+
+<p class="recipe-card__description1">
+Классическая итальянская паста с насыщенным мясным соусом и ароматными травами.
+</p>
+
+<div class="recipe-card__meta1">
+
+<div class="meta-item1">
+<span class="meta-icon1">⏱</span>
+<span>40 мин</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🥕</span>
+<span>8 ингредиентов</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🍽</span>
+<span>4 порции</span>
+</div>
+
+</div>
+
+<a href="#" class="recipe-btn1">
+Смотреть рецепт
+</a>
+
+</div>
+
+</div>
+
+</div>
+        <div class="col-lg-3 col-md-6">
+
+<div class="recipe-card1">
+
+<div class="recipe-card__image1">
+<img src="CSS/image/recipe-chicken.jpg" alt="Паста Болоньезе">
+</div>
+
+<div class="recipe-card__body1">
+
+<h3 class="recipe-card__title1">
+Паста Болоньезе
+</h3>
+
+<p class="recipe-card__description1">
+Классическая итальянская паста с насыщенным мясным соусом и ароматными травами.
+</p>
+
+<div class="recipe-card__meta1">
+
+<div class="meta-item1">
+<span class="meta-icon1">⏱</span>
+<span>40 мин</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🥕</span>
+<span>8 ингредиентов</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🍽</span>
+<span>4 порции</span>
+</div>
+
+</div>
+
+<a href="#" class="recipe-btn1">
+Смотреть рецепт
+</a>
+
+</div>
+
+</div>
+
+</div>
+        <div class="col-lg-3 col-md-6">
+
+<div class="recipe-card1">
+
+<div class="recipe-card__image1">
+<img src="CSS/image/recipe-chicken.jpg" alt="Паста Болоньезе">
+</div>
+
+<div class="recipe-card__body1">
+
+<h3 class="recipe-card__title1">
+Паста Болоньезе
+</h3>
+
+<p class="recipe-card__description1">
+Классическая итальянская паста с насыщенным мясным соусом и ароматными травами.
+</p>
+
+<div class="recipe-card__meta1">
+
+<div class="meta-item1">
+<span class="meta-icon1">⏱</span>
+<span>40 мин</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🥕</span>
+<span>8 ингредиентов</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🍽</span>
+<span>4 порции</span>
+</div>
+
+</div>
+
+<a href="#" class="recipe-btn1">
+Смотреть рецепт
+</a>
+
+</div>
+
+</div>
+
+</div>
+        <div class="col-lg-3 col-md-6">
+
+<div class="recipe-card1">
+
+<div class="recipe-card__image1">
+<img src="CSS/image/recipe-chicken.jpg" alt="Паста Болоньезе">
+</div>
+
+<div class="recipe-card__body1">
+
+<h3 class="recipe-card__title1">
+Паста Болоньезе
+</h3>
+
+<p class="recipe-card__description1">
+Классическая итальянская паста с насыщенным мясным соусом и ароматными травами.
+</p>
+
+<div class="recipe-card__meta1">
+
+<div class="meta-item1">
+<span class="meta-icon1">⏱</span>
+<span>40 мин</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🥕</span>
+<span>8 ингредиентов</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🍽</span>
+<span>4 порции</span>
+</div>
+
+</div>
+
+<a href="#" class="recipe-btn1">
+Смотреть рецепт
+</a>
+
+</div>
+
+</div>
+
+</div>
+        <div class="col-lg-3 col-md-6">
+
+<div class="recipe-card1">
+
+<div class="recipe-card__image1">
+<img src="CSS/image/recipe-chicken.jpg" alt="Паста Болоньезе">
+</div>
+
+<div class="recipe-card__body1">
+
+<h3 class="recipe-card__title1">
+Паста Болоньезе
+</h3>
+
+<p class="recipe-card__description1">
+Классическая итальянская паста с насыщенным мясным соусом и ароматными травами.
+</p>
+
+<div class="recipe-card__meta1">
+
+<div class="meta-item1">
+<span class="meta-icon1">⏱</span>
+<span>40 мин</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🥕</span>
+<span>8 ингредиентов</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🍽</span>
+<span>4 порции</span>
+</div>
+
+</div>
+
+<a href="#" class="recipe-btn1">
+Смотреть рецепт
+</a>
+
+</div>
+
+</div>
+
+</div>
+        <div class="col-lg-3 col-md-6">
+
+<div class="recipe-card1">
+
+<div class="recipe-card__image1">
+<img src="CSS/image/recipe-chicken.jpg" alt="Паста Болоньезе">
+</div>
+
+<div class="recipe-card__body1">
+
+<h3 class="recipe-card__title1">
+Паста Болоньезе
+</h3>
+
+<p class="recipe-card__description1">
+Классическая итальянская паста с насыщенным мясным соусом и ароматными травами.
+</p>
+
+<div class="recipe-card__meta1">
+
+<div class="meta-item1">
+<span class="meta-icon1">⏱</span>
+<span>40 мин</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🥕</span>
+<span>8 ингредиентов</span>
+</div>
+
+<div class="meta-item1">
+<span class="meta-icon1">🍽</span>
+<span>4 порции</span>
+</div>
+
+</div>
+
+<a href="#" class="recipe-btn1">
+Смотреть рецепт
+</a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+
+<!-- ФУТЕР -->
+
+  <footer id="footer" class="bg-light py-3 mt-5">
+    <div class="container">
+      <ul class="soc-media-ul">
+        <li>
+          <a class="facebook" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-solid fa-earth-europe"></i>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a class="google" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-google"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="JS/form.js"></script>
+<script src="JS/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        const form = document.getElementById('inputMessage');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+             try {
+                const response = await fetch('http://localhost:8000/greet=${encodeURIComponent(form)}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name: name })
+                });
+
+    </script>
+</body>
+</html>

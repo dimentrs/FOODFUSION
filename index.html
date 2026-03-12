@@ -48,7 +48,7 @@
         </ul>
 
         <!-- Кнопка справа -->
-        <a href="#signup" class="slide position-absolute end-0 top-50 translate-middle-y d-none d-lg-flex">
+        <a href="login.html" class="slide position-absolute end-0 top-50 translate-middle-y d-none d-lg-flex">
           <span>Войти</span>
         </a>
       </div>
@@ -58,6 +58,7 @@
 
 
   <section id="home" class="sec-main">
+    <div class="container">
     <div class="hero-content">
     <h1 class="main-heading">
       Искусство<br/>
@@ -70,6 +71,7 @@
     </span>
       <a href="#recipes" class="cta-link">Изучить рецепты <img class="cta-link-img" src="/CSS/image/down.svg"></a>
   </div>
+      </div>
   </section>
 
   <section id="about" class="sec-about">
@@ -96,64 +98,68 @@
 <!-- КАРТОЧКИ -->
 <div class="row g-4">
 
-  <div class="col-lg-3 col-md-6">
-    <div class="recipe-card">
+ <div class="col-lg-3 col-md-6">
+  <div class="recipe-card">
+    <div class="recipe-image">
       <img src="CSS/image/recipe-pasta.jpg" alt="">
-      <div class="recipe-meta">
-        <span>ПАСТА</span>
-        <span>30 минут</span>
-      </div>
-      <h3 class="recipe-title">
-        Классическая Паста с Помидорами и Базиликом
-      </h3>
     </div>
+    <div class="recipe-meta">
+      <span>ПАСТА</span>
+      <span>30 минут</span>
+    </div>
+    <a class="recipe-title">
+      Классическая паста с помидорами и базиликом
+    </a>
   </div>
+</div>
 
   <div class="col-lg-3 col-md-6">
     <div class="recipe-card">
+      <div class="recipe-image">
       <img src="CSS/image/recipe-chicken.jpg" alt="">
+      </div>
       <div class="recipe-meta">
         <span>ОСНОВНОЕ БЛЮДО</span>
         <span>1 час 30 минут</span>
       </div>
-      <h3 class="recipe-title">
-        Курица, Запеченная на травах
-      </h3>
+      <a class="recipe-title">
+        Курица запеченная на травах
+      </a>
     </div>
   </div>
 
   <div class="col-lg-3 col-md-6">
     <div class="recipe-card">
+      <div class="recipe-image">
       <img src="CSS/image/recipe-salad.jpg" alt="">
+      </div>
       <div class="recipe-meta">
         <span>САЛАТЫ</span>
         <span>15 минут</span>
       </div>
-      <h3 class="recipe-title">
+      <a class="recipe-title">
         Средиземноморский салат
-      </h3>
+      </a>
     </div>
   </div>
 
   <div class="col-lg-3 col-md-6">
     <div class="recipe-card">
+      <div class="recipe-image">
       <img src="CSS/image/recipe-dessert.jpg" alt="">
+      </div>
       <div class="recipe-meta">
         <span>ДЕСЕРТЫ</span>
         <span>45 минут</span>
       </div>
-      <h3 class="recipe-title">
-        Шоколадный десерт
-      </h3>
-
-
-
-
-  </div>
+      <a href="#" class="recipe-title">
+         Шоколадный десерт
+      </a>
+      </div>
 </section>
 
 <!-- КАТАЛОГ -->
-  <section class="categories-section">
+  <section id="services" class="categories-section">
   <div class="container">
 
     <span class="section-eyebrow-catalog">ОБЗОР</span>
@@ -214,7 +220,7 @@
 </section>
 
 <!-- РЕЙТИНГ -->
-  <section class="about-section">
+  <section id="folio" class="about-section">
   <div class="container">
 
     <div class="about-grid">
@@ -268,7 +274,8 @@
 
 <!-- РАССЫЛКА -->
 
-<section class="newsletter">
+<section id="contact" class="newsletter">
+  <div class="container">
   <div class="newsletter__content">
     <span class="newsletter__eyebrow">РАССЫЛКА</span>
 
@@ -288,11 +295,12 @@
         placeholder="Ваш адрес электронной почты"
         required
       >
-      <button type="submit">
+      <button type="submit" class="btn">
         Подписка <span>→</span>
       </button>
     </form>
   </div>
+    </div>
 </section>
 
 

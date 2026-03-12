@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Современная веб-разработка, превращаем ваши идеи в сайты.">
+    <meta name="keywords" content="DK, IT, сайт, frontend, backend, создать, сделать.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FOODFUSION</title>
+    <link rel="icon" type="image/x-icon" href="/CSS/image/food.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+<div class="wrapper">
+  <header role="banner">
+  <nav class="navbar navbar-expand-lg navbar-default">
+    <div class="container position-relative">
+      <!-- Логотип -->
+      <a href="index.html" class="navbar-brand">
+        <img class="header_logo" src="CSS/image/food.ico" alt="Food Logo" />
+      </a>
+
+      <!-- Тогглер для мобильных -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Меню и кнопка -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <!-- Меню по центру -->
+        <ul class="navbar-nav mb-2 mb-lg-0 js-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html"><span>Главная</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#about"><span>Рецепты</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#services"><span>Категории</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#folio"><span>О Нас</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><span>Связь с нами</span></a></li>
+        </ul>
+
+        <!-- Кнопка справа -->
+
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="auth-wrapper">
+  <div class="auth-container" id="authContainer">
+
+    <div class="auth-form-container auth-sign-up">
+      <form action="#">
+        <h1 class="sing">Создайте аккаунт</h1>
+        <div class="auth-social-container">
+          <a href="#" class="auth-social"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="auth-social"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class="auth-social"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <span>или используйте свою почту для регистрации</span>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button type="button">Зарегистрироваться</button>
+      </form>
+    </div>
+
+    <div class="auth-form-container auth-sign-in">
+      <form action="#">
+        <h1 class="sing">Войдите с помощью</h1>
+        <div class="auth-social-container">
+          <a href="#" class="auth-social"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="auth-social"><i class="fa-brands fa-google"></i></a>
+          <a href="#" class="auth-social"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <span>или используйте свой аккаунт</span>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <a href="#">Забыли свой пароль?</a><br/>
+        <button type="button">Войти</button>
+      </form>
+    </div>
+
+    <div class="auth-overlay-container">
+      <div class="auth-overlay">
+        <div class="auth-overlay-panel auth-overlay-left">
+          <h1>С возвращением!</h1>
+          <p>Чтобы оставаться на связи с нами, пожалуйста, войдите в систему, используя свои личные данные</p>
+          <button class="auth-ghost" id="authSignIn">Войти</button>
+        </div>
+
+        <div class="auth-overlay-panel auth-overlay-right">
+          <h1>Добро пожаловать!</h1>
+          <p>Введите свои персональные данные и начните увлекательное путешествие вместе с нами</p>
+          <button class="auth-ghost" id="authSignUp">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- ФУТЕР -->
+
+  <footer id="footer" class="bg-light py-3 mt-5">
+    <div class="container">
+      <ul class="soc-media-ul">
+        <li>
+          <a class="facebook" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-solid fa-earth-europe"></i>
+          </a>
+        </li>
+        <li>
+          <a class="twitter" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="instagram" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a class="google" href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <i class="fa-brands fa-google"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="JS/form.js"></script>
+<script src="JS/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        const form = document.getElementById('inputMessage');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+             try {
+                const response = await fetch('http://localhost:8000/greet=${encodeURIComponent(form)}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ name: name })
+                });
+
+    </script>
+</body>
+</html>
